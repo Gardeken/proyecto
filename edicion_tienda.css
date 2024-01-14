@@ -1,0 +1,1997 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+header,
+.bloque_list,
+.bloque_list2,
+.bloque_4,
+main {
+  font-family: "Roboto", sans-serif;
+}
+
+header,
+.header2 {
+  background-color: #18181c;
+  width: 100%;
+  height: 4.5rem;
+  display: grid;
+  place-items: center start;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.label_1 {
+  cursor: pointer;
+  display: flex;
+  place-items: center;
+  margin-top: 0.5rem;
+}
+
+.arrow {
+  fill: none;
+  margin-left: 0.7rem;
+  width: 1.2rem;
+  height: 2rem;
+  margin-bottom: 0.5rem;
+  color: #aaaaae;
+}
+
+.imagen_epic {
+  margin: 0.5rem 0 1rem 2rem;
+  width: 2rem;
+  height: 2.1rem;
+}
+
+.label_1:hover .arrow {
+  color: white;
+  animation: hoverarrow 0.2s forwards;
+}
+
+@keyframes hoverarrow {
+  from {
+  }
+
+  to {
+    transform: translateY(0.2rem);
+  }
+}
+
+.bloque_2 {
+  place-self: center end;
+  margin-right: 2rem;
+}
+.menu_ham {
+  color: #aaaaae;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.bloque_1_check {
+  display: flex;
+}
+
+.separador {
+  width: 0.1rem;
+  height: 2.3rem;
+  margin: 1rem 1.5rem 0 1rem;
+  border-radius: 0.5rem;
+  background-color: #303034;
+}
+
+.imagen_store {
+  width: auto;
+  height: 100%;
+  text-align: center;
+}
+
+.imagen_store img {
+  width: 3.5rem;
+  margin-top: 0.3rem;
+  height: 3.5rem;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+.menu_izq {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.menu_izq_crea {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  margin-right: 5rem;
+}
+
+.list_1 h2 {
+  font-size: 1.5rem;
+}
+
+.list_1 li {
+  font-size: 0.9rem;
+  line-height: 2.5rem;
+}
+
+.list_1 {
+  position: absolute;
+  place-items: center;
+  z-index: 11;
+  text-align: start;
+  background-color: #202024;
+  width: 42rem;
+  height: 30rem;
+  padding: 0 1rem 1rem 3rem;
+  margin: 2rem 0 0 2rem;
+  transition: ease-in 0.3s;
+  opacity: 1;
+  list-style: none;
+  border-radius: 1rem;
+  color: #e3e3e7;
+}
+
+.list_1 li:hover {
+  transition: ease-in 0.2s;
+  background-color: #404044;
+}
+
+ul a {
+  color: #e3e3e7;
+  text-decoration: none;
+}
+
+.menu_izq a {
+  display: flex;
+  place-items: center;
+}
+
+.imagen {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.8rem;
+}
+
+.fornite {
+  background-image: url(https://media.graphassets.com/gdXF6wXaRzq7FLerxFmv);
+}
+.rocket {
+  background-image: url(https://media.graphassets.com/nvjfw8LwTbyiETLiJEeE);
+}
+.fall {
+  background-image: url(https://media.graphassets.com/1MdipiMMQeSDZe15gy3V);
+}
+.epic {
+  background-image: url(https://media.graphassets.com/aChpm2RFQ3k8uQWWVwgM);
+  background-size: contain;
+}
+.fab {
+  background-image: url(https://media.graphassets.com/VYHbV8mMQhCzjH0TIGVO);
+}
+.sketchfab {
+  background-image: url(https://media.graphassets.com/SueHxUd6SFy59VZItanD);
+}
+.art {
+  background-image: url(https://media.graphassets.com/GnVa6hUTtSLOfMZrWNxe);
+}
+.unreal {
+  background-image: url(https://media.graphassets.com/B8hDILAISampfm5yFOQA);
+  background-size: cover;
+}
+.meta {
+  background-image: url(https://media.graphassets.com/E3A9GiKvTxe0vldk0b7T);
+  background-size: cover;
+}
+.twin {
+  background-image: url(https://media.graphassets.com/bx1K2n3URsKKIismuqzF);
+}
+.realityscan {
+  background-image: url(https://media.graphassets.com/fBKKKvETTG2PSGTs19a9);
+  background-size: cover;
+}
+.realitycap {
+  background-image: url(https://media.graphassets.com/4hsNBIcXQcCzsN0FYLfD);
+}
+.kids {
+  background-image: url(https://media.graphassets.com/ijWMz82OStqcWRGDawM9);
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+.bloque_list2 {
+  opacity: 0;
+  z-index: -100;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: #101014;
+}
+
+.bloque_list2 ul {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  list-style: none;
+}
+
+.arrow2 {
+  width: 1rem;
+  height: 1rem;
+}
+
+.menu_x {
+  position: relative;
+  z-index: 0;
+  color: #aaaaae;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.label_2 {
+  cursor: pointer;
+}
+
+.list_2 li,
+.list_2 .tienda {
+  cursor: pointer;
+  margin: 0.5rem 0;
+  width: 95%;
+  height: 3.5rem;
+  padding-left: 1rem;
+  background-color: #202024;
+  border-radius: 0.5rem;
+  transition: ease-in 0.1s;
+  display: grid;
+  place-items: center start;
+}
+
+.imagen_store-2 {
+  width: 3.5rem;
+  cursor: pointer;
+  height: 3.5rem;
+  padding-left: 2rem;
+}
+
+.bloque_list2 .boton {
+  display: grid;
+  place-items: end center;
+  width: 100%;
+  padding-top: 30vw;
+  position: relative;
+}
+
+.boton button {
+  padding: 1rem 8.5rem;
+  background-color: #26bbff;
+  border-radius: 0.5rem;
+  border-style: none;
+  transition: ease-in 0.2s;
+}
+
+.boton button:hover {
+  cursor: pointer;
+  transition: ease-in 0.2s;
+  background-color: #61cdff;
+}
+
+.list_2 li:hover,
+.list_2 .tienda:hover {
+  transition: ease-in 0.5s;
+  background-color: #404044;
+}
+
+.list_1 li {
+  border-radius: 0.5rem;
+}
+
+.iconos {
+  display: grid;
+  place-items: end;
+  width: 100%;
+}
+
+.iconos div {
+  margin-right: 1rem;
+}
+
+.globo {
+  height: 3rem;
+  fill: currentColor;
+  width: 2rem;
+}
+
+.iconos svg {
+  color: #aaaaae;
+  cursor: pointer;
+}
+
+.bloque_iconos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: end center;
+}
+
+.bloque_iconos div {
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  background-color: #303034;
+  border-radius: 1rem;
+}
+
+.input_menu {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.input_menu svg {
+  margin-left: 70vw;
+  margin-right: 2vw;
+  color: white;
+}
+
+.bloque_iconos div svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.header2 {
+  background-color: #101014;
+}
+
+.header2 .bloque_1 label {
+  cursor: default;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+main {
+  position: relative;
+  z-index: 10;
+  background-color: #121212;
+  width: 100%;
+  height: auto;
+  display: grid;
+}
+
+.bloque_3 {
+  background-color: #121212;
+  padding-bottom: 1rem;
+  padding-top: 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 9;
+  place-self: start center;
+  width: 75vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.bloque_3-1 {
+  display: flex;
+  gap: 2rem;
+  place-items: center;
+}
+
+.bloque_3-2 {
+  display: grid;
+  grid-template-columns: 4.3fr 1fr;
+  text-align: center;
+  place-items: end;
+  color: #8c8c8c;
+  font-size: 0.8rem;
+}
+
+.bloque_3-2 h3 {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.bloque_3-2 h3:hover {
+  color: #e0e3e7;
+  transition: 0.3s;
+}
+
+.arrow3 {
+  width: 0.9rem;
+  height: 0.9rem;
+  margin: 0;
+}
+
+.bloque_3 .icono {
+  display: none;
+}
+
+.bloque_3-svg {
+  place-self: center;
+}
+
+.bloque_3-descubrir {
+  text-align: center;
+  color: white;
+  font-size: 0.8rem;
+  font-family: "Inter", sans-serif;
+}
+
+.bloque_3-descubrir label {
+  display: flex;
+  cursor: pointer;
+  gap: 0.2rem;
+}
+
+.bloque_3-descubrir h3 {
+  place-self: center;
+}
+
+.list_3 {
+  background-color: #242424;
+  display: none;
+  width: 9rem;
+  height: 6.5rem;
+  border-radius: 0.3rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: absolute;
+  top: 6vw;
+  right: 42.5vw;
+}
+
+.list_3 li {
+  text-align: start;
+  margin-left: 1rem;
+  margin-top: 0.6rem;
+  font-family: "Inter", sans-serif;
+  color: #bdc1c5;
+  font-size: 0.9rem;
+  transition: 0.2s;
+}
+
+.list_3 li:hover p {
+  transition: 0.2s;
+  color: rgb(255, 255, 255);
+}
+
+.lupa {
+  color: #868f91;
+  width: 0.8rem;
+  height: 0.8rem;
+  transform: translate(11px, 14px);
+  position: absolute;
+}
+
+.input_main {
+  color: white;
+  background-color: #202020;
+  border: none;
+  width: 7.5rem;
+  padding: 0 4rem 0 2rem;
+  height: 2.5rem;
+  border-radius: 1.5rem;
+}
+
+.bloque_4-p {
+  background-color: #121212;
+  place-self: center;
+  width: 75%;
+  display: grid;
+  margin-bottom: 2rem;
+  grid-template-columns: 2fr 1fr;
+}
+
+.bloque_4 {
+  background-color: #121212;
+  width: 61vw;
+  margin-right: 0.5rem;
+  background-color: white;
+  height: 45vh;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.bloque_4-1 {
+  background-color: #121212;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.bloque_4-1 .bloque_principe,
+.bloque_4-1 .bloque_avatar,
+.bloque_4-1 .bloque_skull,
+.bloque_4-1 .bloque_home,
+.bloque_4-1 .bloque_inmortal,
+.bloque_4-1 .bloque_valorant {
+  width: 48rem;
+  height: 100%;
+}
+
+.bloque_4-1 p {
+  margin: 0;
+}
+
+.bloque_4-2 {
+  width: 10rem;
+  height: 45vh;
+}
+
+.imagen_main {
+  width: 50rem;
+  background-size: cover;
+  height: 100%;
+  position: relative;
+}
+
+.imagen_main * {
+  position: relative;
+  z-index: 5;
+}
+
+.añadir {
+  background: rgb(28, 28, 28);
+  border-radius: 50%;
+  border: 2px solid rgb(245, 245, 245);
+  display: grid;
+  height: 20px;
+  place-items: center;
+  position: relative;
+  width: 20px;
+}
+
+.cruceta {
+  height: 12px;
+  width: 12px;
+}
+
+.cruceta:before {
+  height: 8px;
+  width: 2px;
+}
+
+.cruceta:after {
+  height: 2px;
+  width: 8px;
+}
+
+.cruceta:before,
+.cruceta:after {
+  background: rgb(245, 245, 245);
+  bottom: 0;
+  content: "";
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.imagen_main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+    270deg,
+    rgba(11, 11, 11, 0) 0%,
+    #0b0b0ba8 100%,
+    #0b0b0b 100%
+  );
+}
+
+.principe {
+  background-image: url(https://cdn2.unrealengine.com/egs-prince-of-persia-lost-crown-carousel-desktop-1920x1080-c7ae57efc8ab.jpg?h=720&quality=medium&resize=1&w=1280);
+}
+.avatar {
+  background-image: url(https://cdn2.unrealengine.com/egs-avatar-frontiers-of-pandora-carousel-desktop-1248x702-9346d193b313.jpg?h=720&quality=medium&resize=1&w=1280);
+}
+.skull {
+  background-image: url(https://cdn2.unrealengine.com/egs-skull-and-bones-carousel-desktop-1248x702-8814fa009b18.jpg?h=720&quality=medium&resize=1&w=1280);
+}
+.home {
+  background-image: url(https://cdn2.unrealengine.com/egs-homewrold-3-carousel-desktop-1920x1080-0ba8d22503a4.jpg?h=720&quality=medium&resize=1&w=1280);
+}
+.inmortal {
+  background-image: url(https://cdn2.unrealengine.com/egs-33-immortals-carousel-desktop-1920x1080-8c08a05f64b4.jpg?h=720&quality=medium&resize=1&w=1280);
+}
+.valorant {
+  background-image: url(https://cdn2.unrealengine.com/egs-valorant-e8a1-carousel-desktop-1920x1080-c37fae15cb29.jpg?h=720&quality=medium&resize=1&w=1280s);
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+.bloque_4-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.bloque_4-2 label {
+  cursor: pointer;
+}
+
+.imagen_main-2 {
+  width: 100%;
+  height: 7vh;
+  border-radius: 0.5rem;
+}
+
+.imagen_main-2 {
+  display: flex;
+  position: relative;
+  font-size: 0.8rem;
+  place-items: center;
+  transition: 0.3s;
+}
+
+.imagen_main-2 section {
+  text-align: start;
+  color: #e0e3e7;
+}
+
+.imagen_main-2 h4 {
+  margin: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.imagen_main-2 div {
+  width: 3.8vh;
+  height: 5vh;
+  background-size: cover;
+  border-radius: 0.3rem;
+  margin-right: 0.5rem;
+  margin-left: 0.8rem;
+}
+
+.imagen_main-2:hover {
+  transition: 0.3s;
+  background-color: #363636;
+}
+
+.principe-2 {
+  position: relative;
+  z-index: 2;
+  background-image: url(https://cdn2.unrealengine.com/egs-prince-of-persia-lost-crown-carousel-thumb-1200x1600-f1da6429caec.jpg?h=128&quality=medium&resize=1&w=96);
+}
+.avatar-2 {
+  position: relative;
+  z-index: 2;
+  background-image: url(https://cdn2.unrealengine.com/egs-avatar-frontiers-of-pandora-carousel-thumb-1200x1600-46a421a5dfcd.jpg?h=128&quality=medium&resize=1&w=96);
+}
+.skull-2 {
+  position: relative;
+  z-index: 2;
+  background-image: url(https://cdn2.unrealengine.com/egs-skull-and-bones-carousel-thumb-1200x1600-eb9d60ded5a8.jpg?h=128&quality=medium&resize=1&w=96);
+}
+.home-2 {
+  position: relative;
+  z-index: 2;
+  background-image: url(https://cdn2.unrealengine.com/egs-homeworld-3-epic-thumb-1200x1600-1200x1600-ac4f7a4b136c.jpg?h=128&quality=medium&resize=1&w=96);
+}
+.inmortal-2 {
+  position: relative;
+  z-index: 2;
+  background-image: url(https://cdn2.unrealengine.com/egs-33-immortals-carousel-thumb-1200x1600-b654cdfa7adf.jpg?h=128&quality=medium&resize=1&w=96);
+}
+.valorant-2 {
+  position: relative;
+  z-index: 2;
+  background-image: url(https://cdn2.unrealengine.com/egs-valorant-e8a1-carousel-thumbnail-315x399-0e7325d61cf0.jpg?h=128&quality=medium&resize=1&w=96);
+}
+
+.logo {
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.logo_principe {
+  margin-top: 7rem;
+  width: 10rem;
+  height: 4rem;
+  background-image: url(https://cdn2.unrealengine.com/egs-prince-of-persia-lost-crown-carousel-logo-252x80-c3b63b9442da.png);
+}
+.logo_avatar {
+  margin-top: 7rem;
+  margin-bottom: 1rem;
+  width: 10rem;
+  height: 3rem;
+  background-image: url(https://cdn2.unrealengine.com/egs-avatar-frontiers-of-pandora-carousel-logo-333x100-3d052fc3c45b.png);
+}
+.logo_skull {
+  margin-top: 8rem;
+  width: 10rem;
+  height: 3rem;
+  background-image: url(https://cdn2.unrealengine.com/egs-skull-and-bones-carousel-logo-350x100-3f35fb158981.png);
+}
+.logo_home {
+  margin-top: 6rem;
+  width: 17rem;
+  height: 5rem;
+  background-image: url(https://cdn2.unrealengine.com/egs-homeworld-3-logo-3840x2160-f528e2d9421b.png);
+}
+.logo_inmortal {
+  margin-top: 8.5rem;
+  width: 10rem;
+  height: 3rem;
+  background-image: url(https://cdn2.unrealengine.com/egs-33-immortals-carousel-logo-white-2-350x100-59d0c17a9967.png);
+}
+.logo_valorant {
+  margin-top: 7rem;
+  width: 15rem;
+  height: 5rem;
+  background-image: url(https://cdn2.unrealengine.com/egs-valorant-e8a1-carousel-logo-400x400-e8d6d3579aca.jpg);
+}
+
+.principe {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.principe .texto:nth-of-type(2) {
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.principe .texto:nth-of-type(3) {
+  margin-bottom: 0.8rem;
+}
+
+.avatar {
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.avatar #boton-1 {
+  display: flex;
+}
+
+.avatar .texto,
+.avatar .logo_avatar,
+.avatar .bloque_botones {
+  margin-left: 2rem;
+}
+
+.avatar .texto:nth-of-type(2) {
+  width: 20rem;
+}
+
+.avatar .texto:nth-of-type(1) {
+  margin-bottom: 0.5rem;
+}
+
+.bloque_primero {
+  margin: 1rem 0;
+  margin-left: 2rem;
+}
+
+.precio {
+  padding-bottom: 1rem;
+}
+
+.primero {
+  background-color: rgba(0, 0, 0, 0.548);
+  color: white;
+  border-radius: 0.3rem;
+  padding: 0.3rem 0.4rem 0.3rem 0.4rem;
+  text-align: center;
+  place-items: center;
+  font-size: 0.55rem;
+  gap: 0.3rem;
+  display: flex;
+  width: 5.5rem;
+  height: 1rem;
+}
+.logo_primero {
+  margin-bottom: 0.4rem;
+  width: 0.6rem;
+  height: 0.6rem;
+}
+
+.principe .texto {
+  color: white;
+}
+
+.principe .texto:nth-of-type(1) {
+  font-size: 0.9rem;
+  width: 15rem;
+}
+
+.principe p:nth-of-type(2) {
+  width: 18rem;
+}
+
+.principe .texto,
+.principe .logo_principe,
+.bloque_botones {
+  margin-left: 2rem;
+}
+
+.bloque_botones {
+  display: flex;
+  gap: 1.5rem;
+}
+
+#boton-1 {
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  border: none;
+  background-color: white;
+  font-size: 0.7rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.3rem;
+}
+
+#boton_2 {
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  gap: 0.8rem;
+  color: white;
+  background-color: transparent;
+  border: none;
+  place-items: center;
+  font-size: 0.6rem;
+  transition: 0.3s;
+  padding: 0 1rem;
+}
+
+#boton_2:hover {
+  border-radius: 0.3rem;
+  background-color: rgba(255, 255, 255, 0.205);
+  transition: 0.3s;
+}
+
+.imagen_main {
+  display: flex;
+  flex-direction: column;
+}
+
+.skull .texto {
+  color: white;
+}
+
+.skull .texto:nth-of-type(2) {
+  width: 19rem;
+  margin-bottom: 1rem;
+}
+
+.skull .texto:nth-of-type(1) {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.skull .bloque_botones {
+  margin-top: 0.8rem;
+}
+
+.skull .texto,
+.skull .logo_skull {
+  margin-left: 2rem;
+}
+
+.home .texto,
+.home .logo_home {
+  color: white;
+  margin-left: 2rem;
+}
+
+.home .texto:nth-of-type(1) {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.home .texto:nth-of-type(2) {
+  margin-bottom: 1rem;
+  width: 18.5rem;
+}
+
+.home .texto:nth-of-type(3) {
+  margin-bottom: 1rem;
+}
+
+.inmortal .texto,
+.inmortal .logo_inmortal {
+  margin-left: 2rem;
+  color: white;
+}
+
+.inmortal .texto:nth-of-type(1) {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.inmortal .texto:nth-of-type(2) {
+  width: 18.5rem;
+  margin-bottom: 2rem;
+}
+
+.valorant .texto,
+.valorant .logo_valorant {
+  margin-left: 2rem;
+  color: white;
+}
+
+.valorant .texto:nth-of-type(1) {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+}
+
+.valorant .texto:nth-of-type(2) {
+  width: 18rem;
+  margin-bottom: 1rem;
+}
+
+.valorant .texto:nth-of-type(3) {
+  margin-bottom: 0.8rem;
+  font-size: 0.9rem;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+
+.bloque_5 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-self: center;
+  width: 75vw;
+  margin-bottom: 2rem;
+}
+
+.bloque_5_desc {
+  display: flex;
+}
+
+.bloque_5-1 p {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  color: white;
+  cursor: pointer;
+}
+
+.bloque_5_desc p:hover ~ .arrow4,
+.bloque_5_desc .arrow4:hover {
+  margin-left: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.bloque_5-2-p {
+  width: 100%;
+  height: 100%;
+}
+
+.bloque_5-2 {
+  display: flex;
+  justify-content: end;
+  gap: 0.5rem;
+}
+
+.arrow4 {
+  transition: 0.3s;
+  color: white;
+  margin-top: 0.3rem;
+  margin-left: 0.3rem;
+  width: 0.7rem;
+  height: 0.7rem;
+}
+
+.bloque_arrow-left,
+.bloque_arrow-right {
+  display: grid;
+  place-items: center;
+  background-color: #202020;
+  border-radius: 50%;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.bloque_arrow-left label,
+.bloque_arrow-right label {
+  display: grid;
+  width: 2rem;
+  place-items: center;
+  height: 3rem;
+  position: absolute;
+  cursor: pointer;
+}
+
+.arrow5 {
+  color: white;
+  width: 1rem;
+  height: 1rem;
+}
+
+.slider-dis-1 .arrow5,
+.slider-dis .arrow5 {
+  color: #838383;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+
+.bloque_6-p {
+  place-self: center;
+  width: 75vw;
+  height: 26rem;
+  overflow: hidden;
+}
+
+.bloque_6 {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 10.7rem;
+  overflow-x: hidden;
+  gap: 1rem;
+}
+
+.imagen_main-3 {
+  cursor: pointer;
+  height: 23rem;
+  transition: 0.3s;
+}
+
+.imagen_main-3-h {
+  border-radius: 0.4rem;
+  display: grid;
+  position: relative;
+  z-index: 1;
+  place-items: start end;
+  width: 100%;
+  height: 60%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.imagen_main-3-h div {
+  margin-top: 0.3rem;
+  margin-right: 0.3rem;
+  opacity: 0;
+  z-index: 2;
+  transition: 0.3s;
+}
+
+.imagen_main-3-h div:hover {
+  opacity: 1;
+}
+
+.imagen_main-3-h::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  border-radius: 0.4rem;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: 0.3s;
+}
+
+.imagen_main-3-h:hover div {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.imagen_main-3-h:hover::before {
+  background-color: #ffffff18;
+  transition: 0.3s;
+}
+
+.howl {
+  background-image: url(https://cdn1.epicgames.com/spt-assets/890897d6a468494fa823c28e4d75c061/howl-7f9yu.png?h=480&quality=medium&resize=1&w=360);
+}
+.baby {
+  background-image: url(https://cdn1.epicgames.com/spt-assets/e9644366a287417180f0c9da0662c559/baby-storm-hjgni.png?h=480&quality=medium&resize=1&w=360);
+}
+.virus {
+  background-image: url(https://cdn1.epicgames.com/spt-assets/db528f74de304e49b6236a4ae3f556d2/virus-infinite-1qxix.jpg?h=480&quality=medium&resize=1&w=360);
+}
+.tomb {
+  background-image: url(https://cdn1.epicgames.com/spt-assets/20e7e7b1cd6b430cb062405676369c2a/tomb-raider-iiii-remastered-wuhrj.jpg?h=480&quality=medium&resize=1&w=360);
+}
+.king {
+  background-image: url(https://cdn1.epicgames.com/epic/offer/Diesel_productv2_for-the-king_EGS_IronOakGames_ForTheKing_S4-510x680-124fa65abe75469a705800f43aaa481fcc0ae8df-510x680-226ea06223a3a31c31c242834bb6878f.jpg?h=480&quality=medium&resize=1&w=360);
+}
+.saboteur {
+  background-image: url(https://cdn1.epicgames.com/spt-assets/ec3a1502977b4cc8a0f47fe6287b37b9/saboteur-sio-czbv0.png?h=480&quality=medium&resize=1&w=360);
+}
+.drive {
+  background-image: url(https://cdn1.epicgames.com/offer/d6d8a7241f6841a8823f5a533a1564da/EGS_PacificDrive_IronwoodStudios_S2_1200x1600-0ae3ba7466eda85b563337ae5368c975?h=480&quality=medium&resize=1&w=360);
+}
+.old {
+  background-image: url(https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_OldWorld_MohawkGames_S2_1200x1600-cf57197806c4b3dca34059594ef40d91?h=480&quality=medium&resize=1&w=360);
+}
+.life {
+  background-image: url(https://cdn1.epicgames.com/spt-assets/322a43dd7cd24a7caca9f46033d8d491/life-changer-1k1ix.jpg?h=480&quality=medium&resize=1&w=360);
+}
+.saboteur-2 {
+  background-image: url(https://cdn1.epicgames.com/spt-assets/51fdf58402c24b5082ef45d688535ffa/saboteur-jvn8s.png?h=480&quality=medium&resize=1&w=360);
+}
+.master {
+  background-image: url(https://cdn1.epicgames.com/spt-assets/be1eef63158a45c889777213954bd1cf/naheulbeuks-dungeon-master-1gpua.jpg?h=480&quality=medium&resize=1&w=360);
+}
+.saboteur-3 {
+  background-image: url(https://cdn1.epicgames.com/spt-assets/4cadad7dce314c59874b245e93952c31/saboteur-ii-avenging-angel-xo64o.jpg?h=480&quality=medium&resize=1&w=360);
+}
+.tango {
+  background-image: url(https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_OperationTango_CleverPlaysStudio_S2_1200x1600-723f640e6dcbac90f3fd8762e69d8724?h=480&quality=medium&resize=1&w=360);
+}
+.dig {
+  background-image: url(https://cdn1.epicgames.com/spt-assets/562426aec0364c9a87c6504f6cebd3ac/dig--deep-in-galaxies-18e8s.png?h=480&quality=medium&resize=1&w=360);
+}
+.tribu {
+  background-image: url(https://cdn1.epicgames.com/spt-assets/0643a975c5c84f0b82ee8c021ae586ae/tribu-1md7a.png?h=480&quality=medium&resize=1&w=360);
+}
+.gard {
+  background-image: url(https://cdn1.epicgames.com/spt-assets/68ee01d17d364f5cabc48fdb8b418761/gardenia-1ch4w.png?h=480&quality=medium&resize=1&w=360);
+}
+.simulator {
+  background-image: url(https://cdn1.epicgames.com/spt-assets/977ce2dee0fe437d90d2a67adf9917d8/download-lawn-mowing-simulator-offer-1eiuw.jpg?h=480&quality=medium&resize=1&w=360);
+}
+.dark {
+  background-image: url(https://cdn1.epicgames.com/spt-assets/8c723d862bb44290b0fae8c1a5d1cd90/presences-dark-awakening-mzl3w.png?h=480&quality=medium&resize=1&w=360);
+}
+.hive {
+  background-image: url(https://cdn1.epicgames.com/spt-assets/6ea4f5e5b12c425fba3e4ed283f5dfd0/the-hive-11wj7.png?h=480&quality=medium&resize=1&w=360);
+}
+.ultros {
+  background-image: url(https://cdn1.epicgames.com/offer/c6422f963ff84bcbb3b77539e77b6ef7/EGS_Ultros_Hadoque_S2_1200x1600-e990ede0b6b95c36635103d4aba77350?h=480&quality=medium&resize=1&w=360);
+}
+.porcu {
+  background-image: url(https://cdn1.epicgames.com/spt-assets/b96857069fc3469087d380d70b8c349b/fall-of-porcupine-vw616.png?h=480&quality=medium&resize=1&w=360);
+}
+
+.imagen_main-3-h-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.bloque_texto-1 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.bloque_texto-1 p {
+  margin: 0.2rem 0;
+}
+
+.bloque_texto-1 p:nth-of-type(1) {
+  font-size: 0.8rem;
+  color: #838383;
+}
+.bloque_texto-1 p:nth-of-type(2) {
+  font-size: 0.8rem;
+  color: white;
+}
+.bloque_texto-1 p:nth-of-type(3) {
+  font-size: 0.9rem;
+  color: #838383;
+}
+
+.bloque_texto-2 {
+  display: grid;
+  grid-auto-flow: column;
+  margin-top: 0.3rem;
+}
+
+.bloque_texto-2-1 {
+  width: 5rem;
+  height: 1rem;
+  font-size: 0.7rem;
+  color: white;
+  display: grid;
+}
+.bloque_texto-2-1 div {
+  margin-left: 0.3rem;
+  background-color: #0074e4;
+  place-self: center start;
+  padding: 0.3rem 0.4rem;
+  border-radius: 0.3rem;
+}
+.bloque_texto-2-1 p {
+  margin: 0;
+}
+
+.bloque_texto-2-2 {
+  display: grid;
+  place-items: end;
+  grid-template-columns: 4rem;
+  font-size: 0.8rem;
+}
+.bloque_texto-2-2 p {
+  margin: 0;
+  color: white;
+}
+.bloque_texto-2-2 p:nth-of-type(1) {
+  color: #838383;
+  text-decoration: line-through;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+
+.bloque_7 {
+  width: 75vw;
+  height: 35vh;
+  place-self: center;
+  display: flex;
+  gap: 1rem;
+  color: white;
+}
+
+.imagen_bloque_7 {
+  z-index: 0;
+  position: relative;
+  border-radius: 0.5rem;
+  width: 18.5rem;
+  height: 11rem;
+  background-position: center;
+  cursor: pointer;
+}
+
+.bloque_7-1 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.bloque_7-2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.bloque_7-3 p {
+  margin: 0;
+}
+.bloque_7-3 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.texto-3-1 {
+  padding-top: 1rem;
+}
+
+.texto-3-2 {
+  padding-top: 3rem;
+}
+
+.texto-2 {
+  display: flex;
+  gap: 1rem;
+}
+
+.texto-2 p:nth-of-type(2) {
+  color: #838383;
+  text-decoration: line-through;
+}
+
+.texto-2 p:nth-of-type(1) {
+  font-size: 0.7rem;
+  place-self: center;
+  background-color: #0074e4;
+  padding: 0.3rem 0.4rem;
+  border-radius: 0.3rem;
+}
+.texto-3-2 {
+  position: relative;
+  padding-bottom: 0.2rem;
+}
+
+.texto-3-2::after {
+  content: "";
+  position: absolute;
+  top: 1;
+  bottom: 0;
+  left: 0;
+  width: 3.8rem;
+  height: 0.1rem;
+  background-color: #2a2a2a;
+}
+
+.texto-3-2:hover {
+  cursor: pointer;
+}
+
+.texto-3-2:hover::after {
+  background-color: white;
+}
+.cruz {
+  opacity: 0;
+  transition: 0.3s;
+  top: 1rem;
+  left: 16rem;
+  z-index: 2;
+  position: absolute;
+}
+
+.front {
+  background-size: cover;
+  background-image: url(https://cdn2.unrealengine.com/es-egs-dotw-front-mission-1st-remake-breaker-1920x1080-a7c70d5b867d.jpg?h=480&quality=medium&resize=1&w=854);
+}
+
+.naim {
+  background-size: cover;
+  background-image: url(https://cdn2.unrealengine.com/es-egs-dotw-nadir-a-grimdark-deckbuilder-breaker-1920x1080-a6ea35c5659c.jpg?h=480&quality=medium&resize=1&w=854);
+}
+.explora {
+  background-size: cover;
+  background-image: url(https://cdn2.unrealengine.com/es-sales-specials-dotw-breaker-asset-1920x1080-5eeaaa823081.jpg?h=480&quality=medium&resize=1&w=854);
+}
+
+.naim:hover .cruz,
+.front:hover .cruz {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.naim::before,
+.front::before,
+.explora::before {
+  transition: 0.3s;
+  opacity: 0;
+  content: "";
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.4rem;
+  background-color: rgba(255, 255, 255, 0.13);
+}
+
+.naim:hover::before,
+.front:hover::before,
+.explora:hover::before {
+  opacity: 1;
+}
+
+.slider-p {
+  display: none;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+
+.bloque_8 {
+  width: 75vw;
+  height: 60vh;
+  padding-bottom: 5rem;
+  place-self: center;
+  margin-bottom: 5rem;
+  display: grid;
+  color: white;
+  grid-template-columns: 1fr 0.001fr 1fr 0.001fr 1fr;
+  font-family: "Inter", sans-serif;
+}
+
+.boton_3 {
+  cursor: pointer;
+  width: 5rem;
+  height: 1.9rem;
+  font-size: 0.55rem;
+  place-self: center end;
+  border: white;
+  border-style: solid;
+  color: white;
+  border-width: thin;
+  border-radius: 0.2rem;
+  background-color: transparent;
+  transition: 0.3s;
+}
+.boton_3:hover {
+  background-color: #383838;
+  transition: 0.3s;
+}
+.boton_3 p {
+  margin: 0;
+}
+
+.separador-2 {
+  width: 0.1rem;
+  place-self: center;
+  height: 100%;
+  margin: 0 0.8rem;
+  background-color: #2c2c2c;
+}
+
+.mas {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+}
+
+.imagen_bloque_8 {
+  width: 3rem;
+  height: 4rem;
+  background-size: cover;
+  display: flex;
+  justify-content: end;
+  border-radius: 0.3rem;
+}
+
+.principe-3 {
+  margin-left: 1rem;
+  background-image: url(https://cdn1.epicgames.com/offer/22600f09e936468c8ecfc22b5eac7d7c/EGST_StorePortrait_1200x1600_1200x1600-54fe39c69e335bbe2c071ff53cfa0685?h=480&quality=medium&resize=1&w=360);
+}
+.alan {
+  margin-left: 1rem;
+
+  background-image: url(https://cdn1.epicgames.com/offer/c4763f236d08423eb47b4c3008779c84/EGS_AlanWake2_RemedyEntertainment_S2_1200x1600-c7c8091ddac0f9669c8e5905bca88aaa?h=480&quality=medium&resize=1&w=360);
+}
+.avatar-3 {
+  margin-left: 1rem;
+  background-image: url(https://cdn1.epicgames.com/offer/eca39884bdf14f65af242a8e3ff5b2d9/EGST_StorePortrait_1200x1600_1200x1600-201e8f02dd794c678599d0dcb66d078e?h=480&quality=medium&resize=1&w=360);
+}
+.lord {
+  margin-left: 1rem;
+  background-image: url(https://cdn1.epicgames.com/spt-assets/2ae760629a384d5199cbefc612db7ac8/the-lord-of-the-rings-return-to-moria-tr0c9.png?h=480&quality=medium&resize=1&w=360);
+}
+.dead {
+  margin-left: 1rem;
+  background-image: url(https://cdn1.epicgames.com/offer/611482b8586142cda48a0786eb8a127c/EGS_DeadbyDaylight_BehaviourInteractive_S2_1200x1600-a1c30209e3b9fb63144daa9b5670f503?h=480&quality=medium&resize=1&w=360);
+}
+.fornite-2 {
+  margin-left: 1rem;
+  background-image: url(https://cdn1.epicgames.com/offer/fn/Blade_1200x1600_1200x1600-fcea56f5eb92df731a89121e2b4416b5?h=480&quality=medium&resize=1&w=360);
+}
+.rocket-2 {
+  margin-left: 1rem;
+  background-image: url(https://cdn1.epicgames.com/offer/9773aa1aa54f4f7b80e44bef04986cea/EGS_RocketLeague_PsyonixLLC_S2_1200x1600-eeed32ae8de826070bdad6ab622d0018?h=480&quality=medium&resize=1&w=360);
+}
+.marvel {
+  margin-left: 1rem;
+  background-image: url(https://cdn1.epicgames.com/offer/2a09fb19b47f46dfb11ebd382f132a8f/EGS_MarvelsGuardiansoftheGalaxy_EidosMontral_S2_01_1200x1600-e8e868690d5e67692c7bf2c13aa84561?h=480&quality=medium&resize=1&w=360);
+}
+.valorant-3 {
+  margin-left: 1rem;
+  background-image: url(https://cdn1.epicgames.com/offer/cbd5b3d310a54b12bf3fe8c41994174f/EGS_VALORANT_RiotGames_S2_1200x1600-9ebf575033287e2177106da5ff45c1d4?h=480&quality=medium&resize=1&w=360);
+}
+.genshin {
+  margin-left: 1rem;
+  background-image: url(https://cdn1.epicgames.com/offer/879b0d8776ab46a59a129983ba78f0ce/genshintall_1200x1600-4a5697be3925e8cb1f59725a9830cafc?h=480&quality=medium&resize=1&w=360);
+}
+.black {
+  margin-left: 1rem;
+  background-image: url(https://cdn1.epicgames.com/spt-assets/ca9ef1bcf2f54043baac351366aec677/black-myth-wukong-1cm8h.png?h=480&quality=medium&resize=1&w=360);
+}
+.home-3 {
+  margin-left: 1rem;
+  background-image: url(https://cdn1.epicgames.com/offer/ef7baa6ce017413ab33e7f7e3f466a96/EGS_Homeworld3_BlackbirdInteractive_S2_1200x1600-2080e2e3662c285b1c9efcb13f3a8d07?h=480&quality=medium&resize=1&w=360);
+}
+.skull-3 {
+  margin-left: 1rem;
+  background-image: url(https://cdn1.epicgames.com/offer/0c05e0889c3e42a4be1d81077d6e653a/SAB_Store_Portrait_1200x1600_1200x1600-121f3de29b692d333e0773c7d4a7a432?h=480&quality=medium&resize=1&w=360);
+}
+.wolf {
+  margin-left: 1rem;
+  background-image: url(https://cdn1.epicgames.com/offer/97590ba7ef144232b14093375c468032/EGS_TheWolfAmongUs2_Telltale_S2_1200x1600-28a121945b86101ea1b20cc3d5f86e78?h=480&quality=medium&resize=1&w=360);
+}
+.frost {
+  margin-left: 1rem;
+  background-image: url(https://cdn1.epicgames.com/offer/32bc7c6aaecd40eeb5f58bb83dba1c05/EGS_Frostpunk2_11bitstudios_S2_1200x1600-8b452490754cb4a4fe1a983c533cfb5d?h=480&quality=medium&resize=1&w=360);
+}
+
+.bloque_imagenes {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+}
+
+.bloque_imagen {
+  display: flex;
+  padding: 1rem 0;
+  border-radius: 0.8rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.bloque_imagen:hover {
+  transition: 0.3s;
+  background-color: #2a2a2a;
+}
+
+.texto_bloque_8 {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-left: 1rem;
+  font-size: 0.8rem;
+  flex-direction: column;
+}
+
+.texto_bloque_8 p {
+  margin: 0;
+}
+
+.c-gris {
+  color: #838383;
+}
+.precio-2 {
+  font-size: 0.6rem;
+}
+
+.bloque_primero-2 {
+  background-color: #2a2a2a;
+  padding: 0.3rem 0;
+  width: 7rem;
+  border-radius: 0.2rem;
+  height: 0.6rem;
+}
+.primero-2 {
+  justify-content: center;
+  display: flex;
+  gap: 0.3rem;
+  font-size: 0.6rem;
+}
+.logo_primero-2 {
+  margin: 0;
+}
+
+.añadir-2 {
+  opacity: 0;
+  background: rgb(28, 28, 28);
+  border-radius: 50%;
+  border: 2px solid rgb(245, 245, 245);
+  display: grid;
+  height: 15px;
+  display: grid;
+  place-items: center;
+  position: relative;
+  width: 15px;
+  margin-top: 0.3rem;
+  margin-right: 0.3rem;
+  transition: 0.3s;
+}
+
+.bloque_imagen:hover .añadir-2 {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.cruceta-2 {
+  height: 6px;
+  width: 6px;
+}
+
+.cruceta-2:before {
+  height: 8px;
+  width: 2px;
+}
+
+.cruceta-2:after {
+  height: 2px;
+  width: 8px;
+}
+
+.cruceta-2:before,
+.cruceta-2:after {
+  background: rgb(245, 245, 245);
+  bottom: 0;
+  content: "";
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.bloque_9 {
+  display: none;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+.bloque_barra {
+  width: 100%;
+  height: 0.2rem;
+  padding-top: 1.5rem;
+  display: grid;
+  place-items: center;
+}
+
+.barra_sep {
+  width: 90vw;
+  height: 0.1rem;
+  background-color: #3d3c3c;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+footer {
+  background-color: #2a2a2a;
+  width: 100%;
+  height: auto;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.bloque_pie-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100vw;
+  padding-top: 2rem;
+}
+
+.bloque_arrow {
+  border: white;
+  place-self: end;
+  margin-right: 6rem;
+  border-style: solid;
+  border-width: 0.15rem;
+  border-radius: 0.3rem;
+  width: 2rem;
+  height: 2rem;
+  transition: 0.3s;
+}
+.bloque_arrow:hover {
+  border: #0078f2;
+  border-style: solid;
+  border-width: 0.15rem;
+  transition: 0.3s;
+}
+.bloque_arrow:hover .arrow6 {
+  color: #0078f2;
+  transition: 0.3s;
+}
+
+.bloque_iconos-2 {
+  display: flex;
+  gap: 0.7rem;
+  margin-left: 5rem;
+}
+.bloque_iconos-2 svg {
+  width: 1.8rem;
+  height: 1.8rem;
+  color: #cccccc;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.bloque_iconos-2 svg:hover {
+  transition: 0.3s;
+  color: #0078f2;
+}
+
+.arrow6 {
+  transition: 0.3s;
+  color: white;
+  width: 2rem;
+  height: 2rem;
+}
+
+.bloque_pie {
+  width: 60vw;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #cccccc;
+  font-size: 0.7rem;
+  line-height: 1.3rem;
+  padding-top: 1.8rem;
+  padding-left: 2.6rem;
+  padding-bottom: 1rem;
+}
+
+.bloque_pie-2 {
+  display: grid;
+  padding-left: 2rem;
+  grid-template-columns: repeat(4, auto);
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  padding-bottom: 3rem;
+}
+
+.bloque_pie-2 p {
+  transition: 0.3s;
+  color: #cccccc;
+}
+
+.bloque_pie-2 p:hover {
+  transition: 0.3s;
+  cursor: pointer;
+  color: #0078f2;
+}
+
+.imagenes_footer {
+  display: flex;
+  text-align: center;
+  gap: 0.3rem;
+  margin-left: 35rem;
+}
+
+.imagenes_footer div {
+  width: 4rem;
+  height: 4rem;
+}
+
+.svg_footer {
+  width: 2rem;
+  transition: 0.5s;
+  height: 2rem;
+  color: #ababab;
+}
+
+.svg_footer:hover {
+  color: white;
+  transition: 0.6s;
+}
+
+.imagenes_footer div {
+  width: 2.3rem;
+  height: 2.3rem;
+  margin: 0;
+  cursor: pointer;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+.bloque_pie-4 p,
+.bloque_pie-5 p {
+  margin: 0;
+}
+
+.bloque_pie-4 {
+  margin-top: 2rem;
+  margin-left: 5rem;
+  display: flex;
+  gap: 5rem;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+}
+
+.bloque_pie-4 p {
+  margin-bottom: 0.5rem;
+}
+.bloque_pie-4-2 {
+  display: flex;
+  padding-top: 1.5rem;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.texto-g {
+  color: #616161;
+}
+
+.bloque_pie-5 {
+  margin-top: 2rem;
+  margin-left: 5rem;
+  display: flex;
+  gap: 0.5rem;
+  color: white;
+  flex-direction: column;
+  font-size: 0.9rem;
+  font-family: "Inter", sans-serif;
+}
+
+.bloque_pie-5-1 {
+  display: flex;
+  gap: 1rem;
+}
+
+.bloque_pie-5 p {
+  margin-bottom: 0.5rem;
+}
+
+.texto-a {
+  transition: 0.3s;
+}
+
+.texto-a:hover {
+  transition: 0.3s;
+  color: #0078f2;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 720px) {
+  .separador {
+    margin: 1rem 0.8rem 0 0.5rem;
+  }
+  .list_1 {
+    width: auto;
+    height: auto;
+  }
+  .menu_izq {
+    display: flex;
+    flex-direction: column;
+  }
+  .list_2 li {
+    width: 90%;
+  }
+  .bloque_list2 .boton {
+    padding-top: 54vh;
+  }
+
+  /*--------------------------------------------------------------------------------------------------*/
+  .bloque_3 {
+    width: 99.9%;
+  }
+  .bloque_3-1 input {
+    display: none;
+  }
+  .lupa {
+    width: 1.3rem;
+    height: 1.3rem;
+    transform: translate(30px, -7px);
+  }
+  .bloque_3-descubrir {
+    font-size: 0.7rem;
+    margin-left: 9rem;
+  }
+  .list_3 {
+    background-color: #121212;
+    padding-left: 8rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    width: 50%;
+    top: 8vh;
+    right: 0;
+    left: 7vw;
+  }
+
+  .bloque_3-2 h3 {
+    display: none;
+  }
+  .bloque_3 .icono {
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .bloque_3-2 {
+    margin-right: 4rem;
+    gap: 0.8rem;
+    place-items: center end;
+  }
+  .icono {
+    transition: 0.3s;
+  }
+  .icono:hover {
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+  }
+
+  /*--------------------------------------------------------------------------------------------------*/
+
+  .bloque_4-p {
+    display: none;
+  }
+
+  /*--------------------------------------------------------------------------------------------------*/
+
+  .bloque_9 {
+    display: grid;
+    width: 100vw;
+    height: auto;
+    margin-bottom: 3rem;
+    margin-left: 2rem;
+  }
+  .bloque_9-img {
+    height: 100vw;
+    overflow: hidden;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 22rem;
+    gap: 1rem;
+  }
+
+  .bloque_9-imgs {
+    border-radius: 0.8rem;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-size: cover;
+    background-color: #0074e4;
+    transition: 0.3s;
+  }
+
+  .bloque_9-imgs::before {
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 0.8rem;
+    position: absolute;
+    background: linear-gradient(
+      195deg,
+      rgba(11, 11, 11, 0) 0%,
+      #0b0b0ba8 100%,
+      #0b0b0b 100%
+    );
+  }
+
+  .bloque_9-labels {
+    width: 100vw;
+    margin-left: 9.3rem;
+    cursor: pointer;
+    height: 1rem;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 0.01fr 0.01fr 0.01fr 0.01fr 0.01fr 0.01fr;
+    gap: 0.5rem;
+  }
+  .bloque_9-labels label:hover {
+    cursor: pointer;
+  }
+  .bloque_9-label {
+    background-color: #575757;
+    width: 0.4rem;
+    border-radius: 50%;
+    height: 0.4rem;
+  }
+
+  .principe-4 {
+    background-image: url(https://cdn2.unrealengine.com/egs-prince-of-persia-lost-crown-carousel-mobile-1200x1600-5f2c91a478d4.jpg?h=854&quality=medium&resize=1&w=640);
+  }
+
+  .avatar-4 {
+    background-image: url(https://cdn2.unrealengine.com/egs-avatar-frontiers-of-pandora-carousel-mobile-1200x1600-396adf1d4457.jpg?h=854&quality=medium&resize=1&w=640);
+  }
+  .skull-4 {
+    background-image: url(https://cdn2.unrealengine.com/egs-skull-and-bones-carousel-mobile-1200x1600-f2dd7eca8325.jpg?h=854&quality=medium&resize=1&w=640);
+  }
+  .home-4 {
+    background-image: url(https://cdn2.unrealengine.com/egs-homeworld-3-mobile-1200x1600-1200x1600-42b6431374b4.jpg?h=854&quality=medium&resize=1&w=640);
+  }
+  .inmortal-3 {
+    background-image: url(https://cdn2.unrealengine.com/egs-33-immortals-carousel-mobile-v2-1021x1361-22b6444d8dbe.jpg?h=854&quality=medium&resize=1&w=640);
+  }
+  .valorant-4 {
+    background-image: url(https://cdn2.unrealengine.com/egs-valorant-e8a1-carousel-mobile-1200x1600-9c284f7ac823.jpg?h=854&quality=medium&resize=1&w=640);
+  }
+
+  /*--------------------------------------------------------------------------------------------------*/
+
+  .bloque_5 {
+    width: 90vw;
+  }
+
+  .bloque_5-2-p {
+    display: none;
+  }
+  .bloque_5_desc {
+    width: 50vw;
+  }
+
+  /*--------------------------------------------------------------------------------------------------*/
+
+  .bloque_6-p {
+    width: 90vw;
+    height: auto;
+    margin-bottom: 4rem;
+  }
+  .imagen_main-3-h div {
+    opacity: 1;
+  }
+  .bloque_6 {
+    grid-auto-columns: 17.7rem;
+    overflow-x: scroll;
+  }
+  .bloque_6::-webkit-scrollbar {
+    display: none;
+  }
+  .imagen_main-3 {
+    height: 30rem;
+  }
+  .imagen_main-3-h {
+    height: 75%;
+  }
+  .bloque_texto-2 {
+    display: flex;
+  }
+  .bloque_texto-2-2 {
+    font-size: 1rem;
+    display: flex;
+    justify-items: center;
+    gap: 1rem;
+  }
+}

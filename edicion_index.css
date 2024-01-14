@@ -1,0 +1,798 @@
+body {
+  margin: 0;
+}
+
+header,
+.bloque_list,
+.bloque_list2,
+.bloque_4,
+main {
+  font-family: "Roboto", sans-serif;
+}
+
+header,
+.header2 {
+  background-color: #18181c;
+  width: 100%;
+  height: 4.5rem;
+  display: grid;
+  place-items: center start;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.label_1 {
+  cursor: pointer;
+  display: flex;
+  place-items: center;
+  margin-top: 0.5rem;
+}
+
+.arrow {
+  fill: none;
+  margin-left: 0.7rem;
+  width: 1.2rem;
+  height: 2rem;
+  color: #aaaaae;
+}
+
+img {
+  margin: 1rem 0 1rem 2rem;
+  width: 2rem;
+  height: 100%;
+}
+
+.label_1:hover .arrow {
+  color: white;
+  animation: hoverarrow 0.2s forwards;
+}
+
+@keyframes hoverarrow {
+  from {
+  }
+
+  to {
+    transform: translateY(0.2rem);
+  }
+}
+
+.bloque_2 {
+  place-self: center end;
+  margin-right: 2rem;
+}
+.menu_ham {
+  color: #aaaaae;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+.menu_izq {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.menu_izq_crea {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  margin-right: 5rem;
+}
+
+.list_1 h2 {
+  font-size: 1.5rem;
+}
+
+.list_1 li {
+  font-size: 0.9rem;
+  line-height: 2.5rem;
+}
+
+.list_1 {
+  position: absolute;
+  place-items: center;
+  z-index: 9;
+  text-align: start;
+  background-color: #202024;
+  width: 42rem;
+  height: 30rem;
+  padding: 0 1rem 1rem 3rem;
+  margin: 2rem 0 0 2rem;
+  transition: ease-in 0.3s;
+  opacity: 1;
+  list-style: none;
+  border-radius: 1rem;
+  color: #e3e3e7;
+}
+
+.list_1 li:hover {
+  transition: ease-in 0.2s;
+  background-color: #404044;
+}
+
+ul a {
+  color: #e3e3e7;
+  text-decoration: none;
+}
+
+.menu_izq a {
+  display: flex;
+  place-items: center;
+}
+
+.imagen {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.8rem;
+}
+
+.fornite {
+  background-image: url(https://media.graphassets.com/gdXF6wXaRzq7FLerxFmv);
+}
+.rocket {
+  background-image: url(https://media.graphassets.com/nvjfw8LwTbyiETLiJEeE);
+}
+.fall {
+  background-image: url(https://media.graphassets.com/1MdipiMMQeSDZe15gy3V);
+}
+.epic {
+  background-image: url(https://media.graphassets.com/aChpm2RFQ3k8uQWWVwgM);
+  background-size: contain;
+}
+.fab {
+  background-image: url(https://media.graphassets.com/VYHbV8mMQhCzjH0TIGVO);
+}
+.sketchfab {
+  background-image: url(https://media.graphassets.com/SueHxUd6SFy59VZItanD);
+}
+.art {
+  background-image: url(https://media.graphassets.com/GnVa6hUTtSLOfMZrWNxe);
+}
+.unreal {
+  background-image: url(https://media.graphassets.com/B8hDILAISampfm5yFOQA);
+  background-size: cover;
+}
+.meta {
+  background-image: url(https://media.graphassets.com/E3A9GiKvTxe0vldk0b7T);
+  background-size: cover;
+}
+.twin {
+  background-image: url(https://media.graphassets.com/bx1K2n3URsKKIismuqzF);
+}
+.realityscan {
+  background-image: url(https://media.graphassets.com/fBKKKvETTG2PSGTs19a9);
+  background-size: cover;
+}
+.realitycap {
+  background-image: url(https://media.graphassets.com/4hsNBIcXQcCzsN0FYLfD);
+}
+.kids {
+  background-image: url(https://media.graphassets.com/ijWMz82OStqcWRGDawM9);
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+.bloque_list2 {
+  opacity: 0;
+  z-index: -100;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: #101014;
+}
+
+.bloque_list2 ul {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  list-style: none;
+}
+
+.arrow2 {
+  width: 1rem;
+  height: 1rem;
+}
+
+.menu_x {
+  position: relative;
+  z-index: 0;
+  color: #aaaaae;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.label_2 {
+  cursor: pointer;
+}
+
+.list_2 li,
+.list_2 .tienda {
+  cursor: pointer;
+  margin: 0.5rem 0;
+  width: 95%;
+  height: 3.5rem;
+  padding-left: 1rem;
+  background-color: #202024;
+  border-radius: 0.5rem;
+  transition: ease-in 0.1s;
+  display: grid;
+  place-items: center start;
+}
+
+.bloque_list2 .boton {
+  display: grid;
+  place-items: end center;
+  width: 100%;
+  padding-top: 30vw;
+  position: relative;
+}
+
+.boton button {
+  padding: 1rem 8.5rem;
+  background-color: #26bbff;
+  border-radius: 0.5rem;
+  border-style: none;
+  transition: ease-in 0.2s;
+}
+
+.boton button:hover {
+  cursor: pointer;
+  transition: ease-in 0.2s;
+  background-color: #61cdff;
+}
+
+.list_2 li:hover,
+.list_2 .tienda:hover {
+  transition: ease-in 0.5s;
+  background-color: #404044;
+}
+
+.list_1 li {
+  border-radius: 0.5rem;
+}
+
+.iconos {
+  display: grid;
+  place-items: end;
+  width: 100%;
+}
+
+.iconos div {
+  margin-right: 1rem;
+}
+
+.globo {
+  height: 3rem;
+  fill: currentColor;
+  width: 2rem;
+}
+
+.iconos svg {
+  color: #aaaaae;
+  cursor: pointer;
+}
+
+.bloque_iconos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: end center;
+}
+
+.bloque_iconos div {
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  background-color: #303034;
+  border-radius: 1rem;
+}
+
+.input_menu {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.input_menu svg {
+  margin-left: 70vw;
+  margin-right: 2vw;
+  color: white;
+}
+
+.bloque_iconos div svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.header2 {
+  background-color: #101014;
+}
+
+.header2 .bloque_1 label {
+  cursor: default;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+.bloque_3 {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+
+.arrow3 {
+  position: absolute;
+  top: 53.5vh;
+  left: 2rem;
+  z-index: 2;
+  color: white;
+  width: 2rem;
+  height: 2.3rem;
+  opacity: 0.5;
+  filter: drop-shadow(3px 1px 3px #000000);
+}
+
+.boton_main {
+  display: none;
+}
+
+.arrow3:hover {
+  opacity: 1;
+  animation: hoverarrow3 0.3s forwards;
+  cursor: pointer;
+}
+
+@keyframes hoverarrow3 {
+  from {
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.arrowright {
+  top: 55vh;
+  left: 93.5vw;
+}
+
+.imagen_main {
+  height: 100vh;
+  width: 50vw;
+}
+
+.imagen_main h2 {
+  margin: 0;
+}
+
+.carro,
+.personaje,
+.rocket_league,
+.robo_call,
+.store,
+.tournament {
+  cursor: pointer;
+  transition: 0.3s;
+  filter: brightness(0.7);
+  background-size: cover;
+  background-position: 15%;
+  background-image: url(https://cdn2.unrealengine.com/Epic+Games+Node%2Fue-alt-1920x1080-e653a4a4dae65307fd2420076abe44bb71b22f06.jpg?resize=1&w=1920&quot);
+}
+
+.carro:hover,
+.personaje:hover,
+.rocket_league:hover,
+.robo_call:hover,
+.store:hover,
+.tournament:hover {
+  transition: 0.3s;
+  filter: brightness(1);
+  transform: scale(1.1);
+}
+
+.texto {
+  position: absolute;
+  bottom: 17.5vh;
+  cursor: pointer;
+  left: 9vw;
+  font-size: 2rem;
+  z-index: 2;
+  color: white;
+  text-transform: uppercase;
+}
+
+.personaje {
+  background-image: url(https://cdn2.unrealengine.com/Epic+Games+Node%2Ffn-1920x1080-05e434e24b3170bc6cc6003c102270ee4cde3a75.jpg?resize=1&w=1920&quot);
+}
+
+.rocket_league {
+  background-image: url(https://cdn2.unrealengine.com/rl-f2p-hero-epic-adjust-gradient-1920x1080-982990639.jpg?resize=1&w=1920&quot);
+}
+
+.store {
+  background-image: url(https://cdn2.unrealengine.com/epichomepage-artboard-1-1920x1080-329693365.jpg?resize=1&w=1920&quot);
+}
+
+.robo_call {
+  background-image: url(https://cdn2.unrealengine.com/Epic+Games+Node%2Frr-1920x1080-5a3f8bce26f45d078c2738cf5140ad18be39041c.jpg?resize=1&w=1920&quot);
+}
+
+.tournament {
+  background-image: url(https://cdn2.unrealengine.com/Epic+Games+Node%2Fut-1920x1080-416b0b679e572854df52c39154aff5945328c04d.jpg?resize=1&w=1920&quot);
+}
+
+.texto_carro,
+.texto_for {
+  transition: 0.3s;
+}
+
+.texto_for {
+  left: 60vw;
+}
+.texto_rocket {
+  left: 110vw;
+}
+.texto_store {
+  left: 157vw;
+}
+.texto_robo {
+  left: 210vw;
+}
+.texto_tournament {
+  left: 257vw;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+footer {
+  background-color: #2a2a2a;
+  width: 100%;
+  height: auto;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.bloque_4 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 3% 0 0 3%;
+}
+
+.button_footer {
+  justify-self: end;
+  padding-right: 5%;
+}
+
+.bloque_4 div:nth-of-type(2) {
+  display: grid;
+  grid-template-columns: 0.1fr 1fr;
+}
+
+.bloque_4 div:nth-of-type(1) {
+  display: flex;
+  gap: 0.8em;
+}
+
+.icono_main {
+  fill: #cccccc;
+  width: 2.1rem;
+  height: 2.1rem;
+}
+
+.bloque_4_der {
+  color: #cccccc;
+  fill: #cccccc;
+}
+
+.icono_main:hover,
+.bloque_4_der:hover {
+  transition: 0.3s;
+  fill: #0078f2;
+  color: #0078f2;
+}
+
+.icono_main-2 {
+  place-self: center;
+  transition: 0.3s;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.bloque_4_der:hover .icono_main-2 {
+  transform: translateY(-0.2rem);
+  transition: 0.3s;
+}
+
+.arrow4 {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+.bloque_4 div:nth-of-type(2) h3 {
+  font-size: 1rem;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+.bloque_5 {
+  display: flex;
+}
+
+.bloque_5 div:nth-of-type(1) {
+  display: flex;
+}
+
+.bloque_5 div:nth-of-type(2) {
+  display: flex;
+}
+
+.bloque_5 div:nth-of-type(1) ul,
+.bloque_5 div:nth-of-type(2) ul {
+  list-style: none;
+  color: #cccccc;
+  font-family: "Fira Mono", monospace;
+}
+
+.bloque_5 h3 {
+  font-weight: lighter;
+  font-size: 0.9rem;
+}
+
+.bloque_5 li {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.bloque_5 li:hover {
+  transition: 0.3s;
+  color: #0078f2;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+.bloque_barra {
+  width: 100%;
+  height: 0.2rem;
+  display: grid;
+  place-items: center;
+}
+
+.barra_sep {
+  width: 90vw;
+  height: 0.1rem;
+  background-color: #3d3c3c;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+.bloque_pie {
+  width: 60vw;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #cccccc;
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+  padding-top: 1.8rem;
+  padding-left: 2.6rem;
+}
+
+.bloque_pie-2 {
+  display: grid;
+  padding-left: 2rem;
+  grid-template-columns: repeat(6, auto);
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  padding-bottom: 3rem;
+}
+
+.bloque_pie-2 p {
+  transition: 0.3s;
+  color: #cccccc;
+}
+
+.bloque_pie-2 p:hover {
+  transition: 0.3s;
+  cursor: pointer;
+  color: #0078f2;
+}
+
+.imagenes_footer {
+  display: flex;
+  text-align: center;
+  padding-left: 2rem;
+  gap: 0.8rem;
+}
+
+.imagenes_footer div {
+  width: 4rem;
+  height: 4rem;
+}
+
+.svg_footer {
+  width: 2.5rem;
+  transition: 0.5s;
+  height: 2.5rem;
+  color: white;
+}
+
+.svg_footer:hover {
+  color: #0078f2;
+  transition: 0.6s;
+}
+
+.imagenes_footer div {
+  width: 2.3rem;
+  height: 2.3rem;
+  margin: 0;
+  cursor: pointer;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 720px) {
+  .menu_izq {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .list_1 {
+    width: auto;
+    height: auto;
+    margin-top: 0.3rem;
+  }
+
+  .list_2 li {
+    width: 90vw;
+  }
+
+  .list_2 .input_menu {
+    display: flex;
+  }
+  .list_2 .input_menu svg {
+    padding-left: 57vw;
+  }
+  .list_2 .arrow2 {
+    margin: 0;
+    padding-left: 15rem;
+  }
+
+  .list_2 .boton {
+    padding-top: 22rem;
+  }
+
+  .arrow3 {
+    left: 0rem;
+  }
+
+  .arrowright {
+    left: 90vw;
+  }
+
+  .imagen_main {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .carro,
+  .personaje,
+  .rocket_league,
+  .robo_call,
+  .store,
+  .tournament {
+    filter: brightness(1);
+  }
+
+  .texto {
+    left: 33vw;
+  }
+
+  .boton_main {
+    display: block;
+    left: 33.8vw;
+    bottom: 13vh;
+  }
+
+  .boton_main button {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3rem;
+    width: 10rem;
+    height: 4rem;
+    border-style: solid;
+    border-color: white;
+    color: white;
+    transition: 0.3s;
+    background-color: transparent;
+  }
+  .boton_main button:hover {
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+  }
+
+  .boton_carro {
+    transition: 0.3s;
+  }
+
+  .boton_for {
+    left: 134vw;
+  }
+
+  .boton_rocket {
+    left: 229.5vw;
+  }
+
+  .boton_store {
+    left: 333.5vw;
+  }
+
+  .boton_robo {
+    left: 431.5vw;
+  }
+
+  .boton_tournament {
+    left: 533vw;
+  }
+
+  .texto_for {
+    left: 131vw;
+  }
+
+  .texto_rocket {
+    left: 228vw;
+  }
+
+  .texto_store {
+    left: 334vw;
+    bottom: 18vh;
+  }
+
+  .texto_robo {
+    left: 430vw;
+  }
+
+  .texto_tournament {
+    left: 520vw;
+  }
+
+  .bloque_3 {
+    width: 100%;
+  }
+
+  .bloque_5 div {
+    flex-direction: column;
+  }
+
+  .bloque_5 ul {
+    padding: 0;
+    padding-left: 2rem;
+  }
+
+  .bloque_5 li {
+    font-size: 0.8rem;
+  }
+
+  .bloque_pie {
+    display: grid;
+    width: 90%;
+    place-items: center;
+    text-align: center;
+    padding-left: 1.5rem;
+  }
+
+  .bloque_pie-2 {
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+    place-items: center;
+  }
+
+  .imagenes_footer {
+    padding: 0;
+  }
+}

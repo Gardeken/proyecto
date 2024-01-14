@@ -1,0 +1,394 @@
+.bloque_list {
+  display: none;
+}
+.input_header {
+  display: none;
+}
+#checkbox_2 {
+  display: none;
+}
+
+main input {
+  display: none;
+}
+
+#checkbox_1:checked ~ .bloque_list {
+  display: grid;
+}
+
+#checkbox_1:checked ~ header .arrow {
+  animation: checkedarrow 0.3s forwards;
+}
+
+#checkbox_2:checked ~ header,
+#checkbox_2:checked ~ main,
+#checkbox_2:checked ~ footer {
+  display: none;
+}
+
+#checkbox_2:checked ~ .bloque_list2 {
+  opacity: 1;
+  z-index: 10;
+}
+
+@keyframes checkedarrow {
+  from {
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+#checkbox_3:checked ~ .bloque_3 .carro,
+#checkbox_3:checked ~ .bloque_3 .personaje,
+#checkbox_3:checked ~ .bloque_3 .rocket_league,
+#checkbox_3:checked ~ .bloque_3 .store {
+  transform: translate(-50vw);
+}
+
+#checkbox_3:checked ~ .bloque_3 .personaje:hover,
+#checkbox_3:checked ~ .bloque_3 .rocket_league:hover {
+  transform: scale(1.1) translate(-47vw);
+}
+
+.texto_carro {
+  transition: 0.3;
+}
+
+#checkbox_3:checked ~ .bloque_3 .texto_carro,
+#checkbox_3:checked ~ .bloque_3 .texto_for,
+#checkbox_3:checked ~ .bloque_3 .texto_rocket,
+#checkbox_3:checked ~ .bloque_3 .texto_store {
+  transform: translate(-50vw);
+  transition: 0.3s;
+}
+
+main label:nth-of-type(2),
+main label:nth-of-type(3),
+main label:nth-of-type(4),
+main label:nth-of-type(5),
+main label:nth-of-type(7),
+main label:nth-of-type(8),
+main label:nth-of-type(9),
+main label:nth-of-type(10),
+main label:nth-of-type(11),
+main label:nth-of-type(12),
+main label:nth-of-type(13) {
+  display: none;
+}
+
+#checkbox_3:checked ~ label:nth-of-type(1) {
+  display: none;
+}
+
+#checkbox_3:checked ~ label:nth-of-type(2) {
+  display: block;
+}
+
+#checkbox_3:checked ~ label:nth-of-type(6) {
+  display: none;
+}
+
+#checkbox_3:checked ~ label:nth-of-type(7) {
+  display: block;
+}
+
+#checkbox_9:checked ~ .bloque_3 .texto_carro,
+#checkbox_9:checked ~ .bloque_3 .texto_for,
+#checkbox_9:checked ~ .bloque_3 .texto_rocket,
+#checkbox_9:checked ~ .bloque_3 .texto_store,
+#checkbox_9:checked ~ .bloque_3 .texto_robo {
+  transform: translate(-100vw);
+  transition: 0.3s;
+}
+
+#checkbox_9:checked ~ .bloque_3 .carro,
+#checkbox_9:checked ~ .bloque_3 .personaje,
+#checkbox_9:checked ~ .bloque_3 .rocket_league,
+#checkbox_9:checked ~ .bloque_3 .store,
+#checkbox_9:checked ~ .bloque_3 .robo_call {
+  transform: translate(-100vw);
+}
+
+#checkbox_9:checked ~ .bloque_3 .store {
+  transform: translate(-100vw);
+}
+
+#checkbox_9:checked ~ .bloque_3 .store:hover,
+#checkbox_9:checked ~ .bloque_3 .rocket_league:hover {
+  transform: scale(1.1) translate(-90vw);
+}
+
+#checkbox_9:checked ~ label:nth-of-type(3) {
+  display: block;
+}
+
+#checkbox_9:checked ~ label:nth-of-type(6) {
+  display: none;
+}
+
+#checkbox_9:checked ~ label:nth-of-type(8) {
+  display: block;
+}
+
+#checkbox_10:checked ~ .bloque_3 .texto_carro,
+#checkbox_10:checked ~ .bloque_3 .texto_for,
+#checkbox_10:checked ~ .bloque_3 .texto_rocket,
+#checkbox_10:checked ~ .bloque_3 .texto_store,
+#checkbox_10:checked ~ .bloque_3 .texto_robo,
+#checkbox_10:checked ~ .bloque_3 .texto_tournament {
+  transform: translate(-150vw);
+  transition: 0.3s;
+}
+
+#checkbox_10:checked ~ .bloque_3 .carro,
+#checkbox_10:checked ~ .bloque_3 .personaje,
+#checkbox_10:checked ~ .bloque_3 .rocket_league,
+#checkbox_10:checked ~ .bloque_3 .store,
+#checkbox_10:checked ~ .bloque_3 .robo_call,
+#checkbox_10:checked ~ .bloque_3 .tournament {
+  transform: translate(-150vw);
+}
+
+#checkbox_10:checked ~ .bloque_3 .store:hover,
+#checkbox_10:checked ~ .bloque_3 .robo_call:hover {
+  transform: scale(1.1) translate(-135vw);
+}
+
+#checkbox_10:checked ~ label:nth-of-type(6) {
+  display: none;
+}
+
+#checkbox_10:checked ~ label:nth-of-type(1) {
+  display: none;
+}
+
+#checkbox_10:checked ~ label:nth-of-type(4) {
+  display: block;
+}
+
+#checkbox_10:checked ~ label:nth-of-type(10) {
+  display: block;
+}
+
+#checkbox_12:checked ~ .bloque_3 .texto_carro,
+#checkbox_12:checked ~ .bloque_3 .texto_for,
+#checkbox_12:checked ~ .bloque_3 .texto_rocket,
+#checkbox_12:checked ~ .bloque_3 .texto_store,
+#checkbox_12:checked ~ .bloque_3 .texto_robo,
+#checkbox_12:checked ~ .bloque_3 .texto_tournament {
+  transform: translate(-200vw);
+  transition: 0.3s;
+}
+
+#checkbox_12:checked ~ .bloque_3 .carro,
+#checkbox_12:checked ~ .bloque_3 .personaje,
+#checkbox_12:checked ~ .bloque_3 .rocket_league,
+#checkbox_12:checked ~ .bloque_3 .store,
+#checkbox_12:checked ~ .bloque_3 .robo_call,
+#checkbox_12:checked ~ .bloque_3 .tournament {
+  transform: translate(-200vw);
+}
+
+#checkbox_12:checked ~ .bloque_3 .tournament:hover,
+#checkbox_12:checked ~ .bloque_3 .robo_call:hover {
+  transform: scale(1.1) translate(-180vw);
+}
+
+#checkbox_12:checked ~ label:nth-of-type(6) {
+  display: none;
+}
+
+#checkbox_12:checked ~ label:nth-of-type(1) {
+  display: none;
+}
+
+#checkbox_12:checked ~ label:nth-of-type(11) {
+  display: block;
+}
+
+#checkbox_12:checked ~ label:nth-of-type(5) {
+  display: block;
+}
+
+@media screen and (max-width: 720px) {
+  #checkbox_3:checked ~ .bloque_3 .carro,
+  #checkbox_3:checked ~ .bloque_3 .personaje,
+  #checkbox_3:checked ~ .bloque_3 .rocket_league,
+  #checkbox_3:checked ~ .bloque_3 .store {
+    transform: translate(-100vw);
+  }
+
+  #checkbox_3:checked ~ .bloque_3 .personaje:hover {
+    transform: scale(1.1) translate(-90vw);
+  }
+
+  #checkbox_3:checked ~ .bloque_3 .texto_carro,
+  #checkbox_3:checked ~ .bloque_3 .texto_for,
+  #checkbox_3:checked ~ .bloque_3 .texto_rocket,
+  #checkbox_3:checked ~ .bloque_3 .texto_store {
+    transform: translate(-100vw);
+  }
+
+  #checkbox_3:checked ~ .bloque_3 .boton_carro,
+  #checkbox_3:checked ~ .bloque_3 .boton_for,
+  #checkbox_3:checked ~ .bloque_3 .boton_rocket {
+    transform: translate(-100vw);
+    transition: 0.3s;
+  }
+
+  #checkbox_3:checked ~ label:nth-of-type(1) {
+    display: none;
+  }
+  #checkbox_3:checked ~ label:nth-of-type(13) {
+    display: block;
+  }
+  #checkbox_9:checked ~ .bloque_3 .carro,
+  #checkbox_9:checked ~ .bloque_3 .personaje,
+  #checkbox_9:checked ~ .bloque_3 .rocket_league,
+  #checkbox_9:checked ~ .bloque_3 .store,
+  #checkbox_9:checked ~ .bloque_3 .robo_call {
+    transform: translate(-200vw);
+  }
+
+  #checkbox_9:checked ~ .bloque_3 .rocket_league:hover {
+    transform: scale(1.1) translate(-180vw);
+  }
+
+  #checkbox_9:checked ~ .bloque_3 .texto_rocket,
+  #checkbox_9:checked ~ .bloque_3 .texto_for {
+    transform: translate(-200vw);
+  }
+
+  #checkbox_9:checked ~ .bloque_3 .boton_carro,
+  #checkbox_9:checked ~ .bloque_3 .boton_for,
+  #checkbox_9:checked ~ .bloque_3 .boton_rocket,
+  #checkbox_9:checked ~ .bloque_3 .boton_store {
+    transform: translate(-200vw);
+    transition: 0.3s;
+  }
+
+  #checkbox_10:checked ~ .bloque_3 .carro,
+  #checkbox_10:checked ~ .bloque_3 .personaje,
+  #checkbox_10:checked ~ .bloque_3 .rocket_league,
+  #checkbox_10:checked ~ .bloque_3 .store,
+  #checkbox_10:checked ~ .bloque_3 .robo_call,
+  #checkbox_10:checked ~ .bloque_3 .tournament {
+    transform: translate(-300vw);
+  }
+
+  #checkbox_10:checked ~ .bloque_3 .store:hover {
+    transform: scale(1.1) translate(-270vw);
+  }
+
+  #checkbox_10:checked ~ .bloque_3 .texto_rocket,
+  #checkbox_10:checked ~ .bloque_3 .texto_for,
+  #checkbox_10:checked ~ .bloque_3 .texto_store {
+    transform: translate(-300vw);
+  }
+
+  #checkbox_10:checked ~ .bloque_3 .boton_carro,
+  #checkbox_10:checked ~ .bloque_3 .boton_for,
+  #checkbox_10:checked ~ .bloque_3 .boton_rocket,
+  #checkbox_10:checked ~ .bloque_3 .boton_store,
+  #checkbox_10:checked ~ .bloque_3 .boton_robo {
+    transform: translate(-300vw);
+    transition: 0.3s;
+  }
+
+  #checkbox_12:checked ~ .bloque_3 .carro,
+  #checkbox_12:checked ~ .bloque_3 .personaje,
+  #checkbox_12:checked ~ .bloque_3 .rocket_league,
+  #checkbox_12:checked ~ .bloque_3 .store,
+  #checkbox_12:checked ~ .bloque_3 .robo_call,
+  #checkbox_12:checked ~ .bloque_3 .tournament {
+    transform: translate(-400vw);
+  }
+
+  #checkbox_12:checked ~ .bloque_3 .texto_carro,
+  #checkbox_12:checked ~ .bloque_3 .texto_for,
+  #checkbox_12:checked ~ .bloque_3 .texto_rocket,
+  #checkbox_12:checked ~ .bloque_3 .texto_store,
+  #checkbox_12:checked ~ .bloque_3 .texto_robo,
+  #checkbox_12:checked ~ .bloque_3 .texto_tournament {
+    transform: translate(-400vw);
+    transition: 0.3s;
+  }
+
+  #checkbox_12:checked ~ .bloque_3 .boton_carro,
+  #checkbox_12:checked ~ .bloque_3 .boton_for,
+  #checkbox_12:checked ~ .bloque_3 .boton_rocket,
+  #checkbox_12:checked ~ .bloque_3 .boton_store,
+  #checkbox_12:checked ~ .bloque_3 .boton_robo,
+  #checkbox_12:checked ~ .bloque_3 .boton_tournament {
+    transform: translate(-400vw);
+    transition: 0.3s;
+  }
+
+  #checkbox_12:checked ~ .bloque_3 .robo_call:hover {
+    transform: scale(1.1) translate(-370vw);
+  }
+
+  #checkbox_12:checked ~ label:nth-of-type(1) {
+    display: none;
+  }
+  #checkbox_12:checked ~ label:nth-of-type(11) {
+    display: none;
+  }
+  #checkbox_12:checked ~ label:nth-of-type(12) {
+    display: block;
+  }
+
+  #checkbox_7:checked ~ .bloque_3 .carro,
+  #checkbox_7:checked ~ .bloque_3 .personaje,
+  #checkbox_7:checked ~ .bloque_3 .rocket_league,
+  #checkbox_7:checked ~ .bloque_3 .store,
+  #checkbox_7:checked ~ .bloque_3 .robo_call,
+  #checkbox_7:checked ~ .bloque_3 .tournament {
+    transform: translate(-500vw);
+  }
+
+  #checkbox_7:checked ~ .bloque_3 .tournament:hover {
+    transform: scale(1.1) translate(-450vw);
+  }
+
+  #checkbox_7:checked ~ .bloque_3 .texto_carro,
+  #checkbox_7:checked ~ .bloque_3 .texto_for,
+  #checkbox_7:checked ~ .bloque_3 .texto_rocket,
+  #checkbox_7:checked ~ .bloque_3 .texto_store,
+  #checkbox_7:checked ~ .bloque_3 .texto_robo,
+  #checkbox_7:checked ~ .bloque_3 .texto_tournament {
+    transform: translate(-500vw);
+    transition: 0.3s;
+  }
+
+  #checkbox_7:checked ~ .bloque_3 .boton_carro,
+  #checkbox_7:checked ~ .bloque_3 .boton_for,
+  #checkbox_7:checked ~ .bloque_3 .boton_rocket,
+  #checkbox_7:checked ~ .bloque_3 .boton_store,
+  #checkbox_7:checked ~ .bloque_3 .boton_robo,
+  #checkbox_7:checked ~ .bloque_3 .boton_tournament {
+    transform: translate(-500vw);
+    transition: 0.3s;
+  }
+
+  #checkbox_7:checked ~ label:nth-of-type(6) {
+    display: none;
+  }
+  #checkbox_7:checked ~ label:nth-of-type(2) {
+    display: none;
+  }
+  #checkbox_7:checked ~ label:nth-of-type(1) {
+    display: block;
+  }
+  #checkbox_7:checked ~ label:nth-of-type(11) {
+    display: block;
+  }
+
+  main label:nth-of-type(1) {
+    display: none;
+  }
+  main label:nth-of-type(2) {
+    display: block;
+  }
+}
