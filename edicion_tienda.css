@@ -1791,7 +1791,7 @@ footer a {
   cursor: pointer;
 }
 
-@media screen and (max-width: 720px) {
+@media only screen and (max-width: 720px) {
   .separador {
     margin: 1rem 0.8rem 0 0.5rem;
   }
@@ -1868,8 +1868,9 @@ footer a {
   /*--------------------------------------------------------------------------------------------------*/
 
   .bloque_9 {
+    overflow: hidden;
     display: grid;
-    width: 100vw;
+    width: 90vw;
     height: auto;
     margin-bottom: 3rem;
     margin-left: 2rem;
@@ -1884,6 +1885,7 @@ footer a {
   }
 
   .bloque_9-imgs {
+    cursor: pointer;
     border-radius: 0.8rem;
     width: 100%;
     height: 100%;
@@ -1900,6 +1902,7 @@ footer a {
     left: 0;
     right: 0;
     border-radius: 0.8rem;
+    z-index: 1;
     position: absolute;
     background: linear-gradient(
       195deg,
@@ -1910,12 +1913,12 @@ footer a {
   }
 
   .bloque_9-labels {
+    margin-top: 1rem;
     width: 100vw;
-    margin-left: 9.3rem;
     cursor: pointer;
     height: 1rem;
     display: grid;
-    place-items: center;
+    place-content: center;
     grid-template-columns: 0.01fr 0.01fr 0.01fr 0.01fr 0.01fr 0.01fr;
     gap: 0.5rem;
   }
@@ -1923,7 +1926,6 @@ footer a {
     cursor: pointer;
   }
   .bloque_9-label {
-    background-color: #575757;
     width: 0.4rem;
     border-radius: 50%;
     height: 0.4rem;
@@ -1949,6 +1951,78 @@ footer a {
     background-image: url(https://cdn2.unrealengine.com/egs-valorant-e8a1-carousel-mobile-1200x1600-9c284f7ac823.jpg?h=854&quality=medium&resize=1&w=640);
   }
 
+  .bloque_primero-3 {
+    position: relative;
+    z-index: 2;
+  }
+
+  .logo-2 {
+    margin-top: 13rem;
+    margin-left: 1.5rem;
+    position: relative;
+    z-index: 2;
+  }
+
+  .texto-3 {
+    margin-left: 1.5rem;
+    position: relative;
+    color: rgb(223, 223, 223);
+    z-index: 2;
+  }
+
+  .texto-3:nth-of-type(1) {
+    font-size: 0.7rem;
+    margin-bottom: 0.2rem;
+  }
+  .texto-3:nth-of-type(2) {
+    font-size: 1rem;
+    margin-top: 0.2rem;
+  }
+  .texto-3:nth-of-type(3) {
+    font-size: 1rem;
+    width: 5rem;
+    margin-top: 0.4rem;
+  }
+
+  .principe-4 .logo-2 {
+    margin-top: 17rem;
+  }
+  .avatar-4 .logo-2 {
+    margin-top: 15rem;
+  }
+  .skull-4 .logo-2 {
+    margin-top: 17rem;
+  }
+  .home-4 .logo-2 {
+    margin-top: 15rem;
+  }
+  .inmortal-3 .logo-2 {
+    margin-top: 19rem;
+  }
+  .valorant-4 .logo-2 {
+    margin-top: 18rem;
+  }
+  .valorant-4 .texto-3:nth-of-type(3) {
+    font-size: 0.8rem;
+  }
+  .inmortal-3 .texto-3 {
+    margin-left: 2rem;
+  }
+  .skull-4 .texto-3:nth-of-type(2) {
+    width: 20rem;
+  }
+
+  .bloque_primero-3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    margin-left: 1.5rem;
+  }
+
+  .cruz-2 {
+    top: 1rem;
+    right: 1rem;
+    position: absolute;
+  }
   /*--------------------------------------------------------------------------------------------------*/
 
   .bloque_5 {
@@ -1993,5 +2067,87 @@ footer a {
     display: flex;
     justify-items: center;
     gap: 1rem;
+  }
+
+  /*--------------------------------------------------------------------------------------------------*/
+
+  .bloque_7 {
+    width: 90vw;
+    height: 32vh;
+    overflow: hidden;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 22rem;
+  }
+
+  .imagen_bloque_7 {
+    width: 22rem;
+    height: 12rem;
+  }
+
+  .slider-p {
+    margin-bottom: 3rem;
+    display: grid;
+    place-content: center;
+    grid-template-columns: 0.01fr 0.01fr 0.01fr 0.01fr 0.01fr 0.01fr;
+    gap: 0.5rem;
+    width: 100vw;
+    height: 1rem;
+  }
+
+  .slider-p label {
+    cursor: pointer;
+    width: 0.4rem;
+    height: 0.4rem;
+    background-color: #575757;
+    border-radius: 50%;
+  }
+
+  .cruz {
+    opacity: 1;
+    left: 19rem;
+  }
+
+  .texto-3-2::after {
+    top: 4rem;
+  }
+
+  /*--------------------------------------------------------------------------------------------------*/
+
+  .bloque_8 {
+    width: 90vw;
+    overflow: hidden;
+    margin-bottom: 0;
+  }
+
+  .bloque_8-1,
+  .bloque_8-2,
+  .bloque_8-3 {
+    width: 20rem;
+  }
+
+  .añadir-2 {
+    opacity: 1;
+  }
+
+  /*--------------------------------------------------------------------------------------------------*/
+
+  .bloque_pie-2 {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+  .imagenes_footer {
+    margin: 0;
+    margin-left: 16rem;
+  }
+
+  .bloque_pie-4 {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .bloque_pie-4-2 {
+    padding-top: 0;
   }
 }

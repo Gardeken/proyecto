@@ -42,7 +42,10 @@
 #checkbox_20,
 #checkbox_21,
 #checkbox_22,
-#checkbox_23 {
+#checkbox_23,
+#checkbox_24,
+#checkbox_25,
+#checkbox_26 {
   display: none;
 }
 
@@ -277,25 +280,92 @@
   #checkbox_3:checked ~ main::before {
     display: block;
   }
+  .bloque_7-1,
+  .bloque_7-2,
+  .bloque_7-3,
+  .bloque_8-1,
+  .bloque_8-2,
+  .bloque_8-3,
+  .separador-2 {
+    transition: 0.3s;
+  }
+  #checkbox_16:checked ~ .bloque_7 .bloque_7-1,
+  #checkbox_16:checked ~ .bloque_7 .bloque_7-2,
+  #checkbox_16:checked ~ .bloque_7 .bloque_7-3 {
+    transform: translateX(-75vw);
+    transition: 0.3s;
+  }
+
+  #checkbox_17:checked ~ .bloque_7 .bloque_7-1,
+  #checkbox_17:checked ~ .bloque_7 .bloque_7-2,
+  #checkbox_17:checked ~ .bloque_7 .bloque_7-3 {
+    transform: translateX(-130vw);
+    transition: 0.3s;
+  }
+
+  .bloque_9-label {
+    transition: 0.3s;
+    background-color: #575757;
+  }
+  #checkbox_15:checked ~ .slider-p .label-2,
+  #checkbox_16:checked ~ .slider-p label:nth-of-type(2),
+  #checkbox_17:checked ~ .slider-p label:nth-of-type(3),
+  #checkbox_18:checked ~ .bloque_9 .bloque_9-label:nth-of-type(1),
+  #checkbox_19:checked ~ .bloque_9 .bloque_9-label:nth-of-type(2),
+  #checkbox_20:checked ~ .bloque_9 .bloque_9-label:nth-of-type(3),
+  #checkbox_21:checked ~ .bloque_9 .bloque_9-label:nth-of-type(4),
+  #checkbox_22:checked ~ .bloque_9 .bloque_9-label:nth-of-type(5),
+  #checkbox_23:checked ~ .bloque_9 .bloque_9-label:nth-of-type(6),
+  #checkbox_24:checked ~ .slider-p-2 label:nth-of-type(1),
+  #checkbox_25:checked ~ .slider-p-2 label:nth-of-type(2),
+  #checkbox_26:checked ~ .slider-p-2 label:nth-of-type(3) {
+    background-color: white;
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
 
   #checkbox_19:checked ~ .bloque_9 .bloque_9-imgs {
-    transform: translateX(-79vw);
+    transform: translateX(-72vw);
     transition: 0.3s;
   }
   #checkbox_20:checked ~ .bloque_9 .bloque_9-imgs {
-    transform: translateX(-162vw);
+    transform: translateX(-148vw);
     transition: 0.3s;
   }
   #checkbox_21:checked ~ .bloque_9 .bloque_9-imgs {
-    transform: translateX(-245vw);
+    transform: translateX(-220vw);
     transition: 0.3s;
   }
   #checkbox_22:checked ~ .bloque_9 .bloque_9-imgs {
-    transform: translateX(-328vw);
+    transform: translateX(-280vw);
     transition: 0.3s;
   }
   #checkbox_23:checked ~ .bloque_9 .bloque_9-imgs {
-    transform: translateX(-405vw);
+    transform: translateX(-355vw);
+    transition: 0.3s;
+  }
+
+  #checkbox_24:checked ~ {
+    transform: translateX(-355vw);
+    transition: 0.3s;
+  }
+  #checkbox_23:checked ~ {
+    transform: translateX(-355vw);
+    transition: 0.3s;
+  }
+
+  #checkbox_25:checked ~ .bloque_8 .bloque_8-1,
+  #checkbox_25:checked ~ .bloque_8 .bloque_8-2,
+  #checkbox_25:checked ~ .bloque_8 .bloque_8-3,
+  #checkbox_25:checked ~ .bloque_8 .separador-2 {
+    transform: translateX(-67vw);
+    transition: 0.3s;
+  }
+  #checkbox_26:checked ~ .bloque_8 .bloque_8-1,
+  #checkbox_26:checked ~ .bloque_8 .bloque_8-2,
+  #checkbox_26:checked ~ .bloque_8 .bloque_8-3,
+  #checkbox_26:checked ~ .bloque_8 .separador-2 {
+    transform: translateX(-135vw);
     transition: 0.3s;
   }
 }
