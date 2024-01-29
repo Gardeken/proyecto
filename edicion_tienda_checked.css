@@ -101,7 +101,7 @@
 #checkbox_5:checked ~ .bloque_4 .bloque_home,
 #checkbox_5:checked ~ .bloque_4 .bloque_inmortal,
 #checkbox_5:checked ~ .bloque_4 .bloque_valorant {
-  transform: translateX(-62vw);
+  transform: translateX(-48rem);
   transition: 0.3s;
 }
 
@@ -160,7 +160,7 @@
 #checkbox_6:checked ~ .bloque_4 .bloque_home,
 #checkbox_6:checked ~ .bloque_4 .bloque_inmortal,
 #checkbox_6:checked ~ .bloque_4 .bloque_valorant {
-  transform: translateX(-124vw);
+  transform: translateX(-96rem);
   transition: 0.3s;
 }
 
@@ -170,7 +170,7 @@
 #checkbox_7:checked ~ .bloque_4 .bloque_home,
 #checkbox_7:checked ~ .bloque_4 .bloque_inmortal,
 #checkbox_7:checked ~ .bloque_4 .bloque_valorant {
-  transform: translateX(-187vw);
+  transform: translateX(-144rem);
   transition: 0.3s;
 }
 
@@ -180,7 +180,7 @@
 #checkbox_8:checked ~ .bloque_4 .bloque_home,
 #checkbox_8:checked ~ .bloque_4 .bloque_inmortal,
 #checkbox_8:checked ~ .bloque_4 .bloque_valorant {
-  transform: translateX(-249vw);
+  transform: translateX(-192rem);
   transition: 0.3s;
 }
 
@@ -190,7 +190,7 @@
 #checkbox_9:checked ~ .bloque_4 .bloque_home,
 #checkbox_9:checked ~ .bloque_4 .bloque_inmortal,
 #checkbox_9:checked ~ .bloque_4 .bloque_valorant {
-  transform: translateX(-310vw);
+  transform: translateX(-240rem);
   transition: 0.3s;
 }
 
@@ -209,7 +209,7 @@
 
 #checkbox_10:checked ~ .bloque_6-p .imagen_main-3 {
   transition: 0.3s;
-  transform: translateX(-75vw);
+  transform: translateX(-58rem);
 }
 
 #checkbox_10:checked ~ .bloque_5 .slider1 {
@@ -225,7 +225,7 @@
 
 #checkbox_11:checked ~ .bloque_6-p .imagen_main-3 {
   transition: 0.3s;
-  transform: translateX(-151vw);
+  transform: translateX(-117rem);
 }
 
 #checkbox_11:checked ~ .bloque_5 .slider1,
@@ -239,7 +239,7 @@
 
 #checkbox_12:checked ~ .bloque_6-p .imagen_main-3 {
   transition: 0.3s;
-  transform: translateX(-226vw);
+  transform: translateX(-175rem);
 }
 #checkbox_12:checked ~ .bloque_5 .slider1,
 #checkbox_12:checked ~ .bloque_5 .slider-dis-1 {
@@ -251,7 +251,7 @@
 }
 #checkbox_13:checked ~ .bloque_6-p .imagen_main-3 {
   transition: 0.3s;
-  transform: translateX(-241vw);
+  transform: translateX(-187rem);
 }
 #checkbox_13:checked ~ .bloque_5 .slider1,
 #checkbox_13:checked ~ .bloque_5 .slider-dis-1 {
@@ -292,14 +292,14 @@
   #checkbox_16:checked ~ .bloque_7 .bloque_7-1,
   #checkbox_16:checked ~ .bloque_7 .bloque_7-2,
   #checkbox_16:checked ~ .bloque_7 .bloque_7-3 {
-    transform: translateX(-75vw);
+    transform: translateX(-22rem);
     transition: 0.3s;
   }
 
   #checkbox_17:checked ~ .bloque_7 .bloque_7-1,
   #checkbox_17:checked ~ .bloque_7 .bloque_7-2,
   #checkbox_17:checked ~ .bloque_7 .bloque_7-3 {
-    transform: translateX(-130vw);
+    transform: translateX(-44rem);
     transition: 0.3s;
   }
 
@@ -308,8 +308,8 @@
     background-color: #575757;
   }
   #checkbox_15:checked ~ .slider-p .label-2,
-  #checkbox_16:checked ~ .slider-p label:nth-of-type(2),
-  #checkbox_17:checked ~ .slider-p label:nth-of-type(3),
+  #checkbox_16:checked ~ .slider-p .label-3:nth-of-type(2),
+  #checkbox_17:checked ~ .slider-p .label-4:nth-of-type(3),
   #checkbox_18:checked ~ .bloque_9 .bloque_9-label:nth-of-type(1),
   #checkbox_19:checked ~ .bloque_9 .bloque_9-label:nth-of-type(2),
   #checkbox_20:checked ~ .bloque_9 .bloque_9-label:nth-of-type(3),
@@ -325,23 +325,23 @@
   }
 
   #checkbox_19:checked ~ .bloque_9 .bloque_9-imgs {
-    transform: translateX(-72vw);
+    transform: translateX(-22rem);
     transition: 0.3s;
   }
   #checkbox_20:checked ~ .bloque_9 .bloque_9-imgs {
-    transform: translateX(-148vw);
+    transform: translateX(-45rem);
     transition: 0.3s;
   }
   #checkbox_21:checked ~ .bloque_9 .bloque_9-imgs {
-    transform: translateX(-220vw);
+    transform: translateX(-68rem);
     transition: 0.3s;
   }
   #checkbox_22:checked ~ .bloque_9 .bloque_9-imgs {
-    transform: translateX(-280vw);
+    transform: translateX(-91rem);
     transition: 0.3s;
   }
   #checkbox_23:checked ~ .bloque_9 .bloque_9-imgs {
-    transform: translateX(-355vw);
+    transform: translateX(-110rem);
     transition: 0.3s;
   }
 
@@ -358,14 +358,14 @@
   #checkbox_25:checked ~ .bloque_8 .bloque_8-2,
   #checkbox_25:checked ~ .bloque_8 .bloque_8-3,
   #checkbox_25:checked ~ .bloque_8 .separador-2 {
-    transform: translateX(-67vw);
+    transform: translateX(-21rem);
     transition: 0.3s;
   }
   #checkbox_26:checked ~ .bloque_8 .bloque_8-1,
   #checkbox_26:checked ~ .bloque_8 .bloque_8-2,
   #checkbox_26:checked ~ .bloque_8 .bloque_8-3,
   #checkbox_26:checked ~ .bloque_8 .separador-2 {
-    transform: translateX(-135vw);
+    transform: translateX(-42rem);
     transition: 0.3s;
   }
 }
